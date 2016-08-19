@@ -82,23 +82,38 @@
   </div>
 
   <div class="facilitiesDiv container">
-    <div class="row">
-      <div class="col-xs-12 col-md-3">
-        <center>
-        <div class=""></div>
-        </center>
+    <center>
+      <div class="row" style="width:75%">
+        <a href="#">
+        <div class="col-xs-12 col-md-4">
+          <div class="col-xs-12 facilityDesc"><img src="assets/img/placeholderIcon.png" width="50vh"></div>
+          <div class="col-xs-12 facilityDesc"><img src="assets/img/line.png" width="75%"></div>
+          <div class="col-xs-12 facilityDesc"><h3 style="color:#ddd395;">SOMETHING</h3></div>
+          <div class="col-xs-12 facilityDesc"><p style="color:white;">TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT</p></div>          
+        </div>
+       </a>
+          <hr class="col-xs-12 visible-xs">
+
+        <a href="#">
+        <div class="col-xs-12 col-md-4">
+          <div class="col-xs-12 facilityDesc"><img src="assets/img/placeholderIcon.png" width="50vh"></div>
+          <div class="col-xs-12 facilityDesc"><img src="assets/img/line.png" width="75%"></div>
+          <div class="col-xs-12 facilityDesc"><h3 style="color:#ddd395;">SOMETHING</h3></div>
+          <div class="col-xs-12 facilityDesc"><p style="color:white;">TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT</p></div>
+        </div>
+          <hr class="col-xs-12 visible-xs">
+        </a>
+
+        <a href="#">
+        <div class="col-xs-12 col-md-4">
+          <div class="col-xs-12 facilityDesc"><img src="assets/img/placeholderIcon.png" width="50vh"></div>
+          <div class="col-xs-12 facilityDesc"><img src="assets/img/line.png" width="75%"></div>
+          <div class="col-xs-12 facilityDesc"><H3 style="color:#ddd395;">SOMETHING</H3></div>
+          <div class="col-xs-12 facilityDesc"><p style="color:white;">TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT</p></div>
+        </div>
+        </a>
       </div>
-      <div class="col-xs-12 col-md-3 col-md-offset-1">
-        <center>
-        <div class=""></div>
-        </center>
-      </div>
-      <div class="col-xs-12 col-md-3 col-md-offset-1">
-        <center>
-        <div class=""></div>
-        </center>
-      </div>
-    </div>
+    </center>
   </div>
 
 </div>

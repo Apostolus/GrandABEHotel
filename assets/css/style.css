@@ -66,6 +66,10 @@ ul.nav a:hover {
 	padding: 10px;
 }
 
+.facilityDesc{
+	margin: 10px;
+}
+
 td{
 	text-align: center;
 }
@@ -82,4 +86,13 @@ footer{
 	height: 300px;		/*CHANGE*/
 	background-color: #4A1717;
 	color: yellow;		/*CHANGE*/
+}
+
+h3{
+	margin: 0;
+}
+
+hr{
+	background-color: #ddd395;
+	opacity: 0.5;
 }
