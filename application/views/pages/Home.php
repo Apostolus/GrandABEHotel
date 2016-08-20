@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container-fluid">
   <br>
   <div id="imgCarousel" class="carousel slide" data-ride="carousel">
     <!--Indicator-->
@@ -81,7 +81,7 @@
     </center>
   </div>
 
-  <div class="facilitiesDiv container">
+  <div class="facilitiesDiv container-fluid">
     <center>
       <div class="row" style="width:75%">
         <a href="#">
@@ -92,7 +92,7 @@
           <div class="col-xs-12 facilityDesc"><p style="color:white;">TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT</p></div>          
         </div>
        </a>
-          <hr class="col-xs-12 visible-xs">
+          <hr class="col-xs-12 visible-xs visible-sm">
 
         <a href="#">
         <div class="col-xs-12 col-md-4">
@@ -101,7 +101,7 @@
           <div class="col-xs-12 facilityDesc"><h3 style="color:#ddd395;">SOMETHING</h3></div>
           <div class="col-xs-12 facilityDesc"><p style="color:white;">TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT</p></div>
         </div>
-          <hr class="col-xs-12 visible-xs">
+          <hr class="col-xs-12 visible-xs visible-sm">
         </a>
 
         <a href="#">
@@ -116,4 +116,13 @@
     </center>
   </div>
 
+  <div class="roomImages container-fluid hidden-xs hidden-sm">
+    <div class="row">
+      <div class="col-md-6 roomImgDiv"><img class="roomImg" src="assets/img/home1.jpg"></div>
+      <div class="col-md-6 roomImgDiv"><img class="roomImg" src="assets/img/home2.jpg"></div>
+
+      <div class="col-md-6 roomImgDiv"><img class="roomImg" src="assets/img/home3.jpg"></div>
+      <div class="col-md-6 roomImgDiv"><img class="roomImg" src="assets/img/home4.jpg"></div>
+    </div>
+  </div>
 </div>

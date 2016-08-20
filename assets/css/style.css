@@ -1,6 +1,9 @@
 /*body{
-	color: #ddd395;
+	
 }*/
+.container-fluid{
+	padding: 0;
+}
 
 .navbar{
 	background-color: #4A1717;
@@ -36,10 +39,9 @@ ul.nav a:hover {
 	background-color: #5F2020;
 }
 
- .container{
-	margin: 0;
-	width: 100%;
-	padding: 0;
+.row{
+    margin-left: 0;
+    margin-right: 0;
 }
 
  .carousel{
@@ -68,6 +70,15 @@ ul.nav a:hover {
 
 .facilityDesc{
 	margin: 10px;
+}
+
+.roomImgDiv{
+	background-color: #1e1e1e;
+	padding: 0;
+}
+
+.roomImg{
+	width: 99.9%;
 }
 
 td{
