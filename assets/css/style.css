@@ -1,6 +1,3 @@
-/*body{
-	
-}*/
 .container-fluid{
 	padding: 0;
 }
@@ -56,6 +53,7 @@ ul.nav a:hover {
 	top: 50%;
 	transform: translateY(-50%);
 	bottom: initial;
+	color: #ddd395;
 }
 .bookingDiv{
 	width: 100%;
@@ -81,6 +79,21 @@ ul.nav a:hover {
 	width: 99.9%;
 }
 
+.roomDetails{
+	background-color: #1e1e1e;
+}
+
+.reserve{
+	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+	min-height: 100%;
+	width: 100%;
+	height: auto;
+	background:url('../img/home4Dark.jpg');
+	background-size: cover;
+}
+
 td{
 	text-align: center;
 }
@@ -94,9 +107,12 @@ input{
 
 footer{
 	width: 100%;
-	height: 300px;		/*CHANGE*/
 	background-color: #4A1717;
-	color: yellow;		/*CHANGE*/
+	padding: 30px;
+}
+
+.foot .col-xs-6 h5{
+	color: white;
 }
 
 h3{
@@ -106,4 +122,15 @@ h3{
 hr{
 	background-color: #ddd395;
 	opacity: 0.5;
+}
+
+.btn-primary{
+	background: #ddd395;
+	border: none;
+	color: black;
+}
+
+.btn-primary:hover{
+	background: #C2B776;
+	color: black;
 }
