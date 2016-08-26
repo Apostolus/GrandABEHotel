@@ -36,7 +36,7 @@
         <div class="carousel-caption">
           <h3>Room 3</h3>
           <img src="assets/img/line.svg" width="50%" style="margin:2vw" class="hidden-xs">
-          <p class="hidden-xs">Whatnot</p>
+          <p class="hidden-xs">Lorem Ipsum</p>
         </div>
       </div>
 
@@ -45,7 +45,7 @@
         <div class="carousel-caption">
           <h3>Room 4</h3>
           <img src="assets/img/line.svg" width="50%" style="margin:2vw" class="hidden-xs">
-          <p class="hidden-xs">HEEEEY</p>
+          <p class="hidden-xs">Lorem Ipsum</p>
         </div>
       </div>
   
@@ -53,42 +53,74 @@
 
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#imgCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" style="color:#ddd395"></span>
       <span class="sr-only">Previous</span>
     </a>
     <a class="right carousel-control" href="#imgCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" style="color:#ddd395"></span>
       <span class="sr-only">Next</span>
     </a>
   </div>
 
   <!-- BOOKING -->
   <div class="bookingDiv">
-    <div class="row">
     <center>
+    <!-- for MD &LG -->
+    <div class="row visible-md visible-lg">
       <div class="col-xs-12">
-    <form>
-      <table style="width:60%; color:yellow;">
-        <tr>
-          <td>Check-In</td>
-          <td>Check-Out</td>
-          <td>Adults</td>
-          <td>Children</td>
-          <td>Promo Code</td>
-        </tr>
-        <tr>
-          <td><input type="date" name="checkInDate"></td>
-          <td><input type="date" name="checkOutDate"></td>
-          <td><input type="text" name="adultCount" onkeypress='return event.charCode >= 48 && event.charCode <= 57' placeholder="numbers only"></td>
-          <td><input type="text" name="childCount" onkeypress='return event.charCode >= 48 && event.charCode <= 57' placeholder="numbers only"></td>
-          <td><input type="text" name="promoCode"></td>
-          <td><input type="submit" value="Book"></td>
-        </tr>
-      </table>
-    </form>
+        <form>
+          <table style="width:60%; color:#ddd395;">
+            <tr>
+              <td>Check-In</td>
+              <td>Check-Out</td>
+              <td>Adults</td>
+              <td>Children</td>
+              <td>Promo Code</td>
+            </tr>
+            <tr>
+              <td><input type="date" id="checkin"></td>
+              <td><input type="date" id="checkout"></td>
+              <td><input type="text" id="adult" onkeypress='return event.charCode >= 48 && event.charCode <= 57' placeholder="numbers only"></td>
+              <td><input type="text" id="children" onkeypress='return event.charCode >= 48 && event.charCode <= 57' placeholder="numbers only"></td>
+              <td><input type="text" id="promoCode"></td>
+              <td><input type="submit" value="Book" class="button"></td>
+            </tr>
+          </table>
+        </form>
+      </div>
     </div>
+       
+    <!-- for XS & SM -->
+    <div class="row visible-xs visible-sm" style="width:65%">
+      <div class="col-xs-12">
+        <form style=" color:#ddd395">     
+          <div class="form-group">
+            <label for="checkin">Check-In:</label>
+            <input type="date" class="form-control" id="checkin">
+          </div>
+          <div class="form-group">
+            <label for="checkout">Check-Out:</label>
+            <input type="date" class="form-control" id="checkout">
+          </div>
+          <div class="form-group">
+            <label for="adult">Adults:</label>
+            <input type="text" class="form-control" id="adult" onkeypress='return event.charCode >= 48 && event.charCode <= 57' placeholder="numbers only">
+          </div>
+          <div class="form-group">
+            <label for="adult">Children:</label>
+            <input type="text" class="form-control" id="children" onkeypress='return event.charCode >= 48 && event.charCode <= 57' placeholder="numbers only">
+          </div>
+          <div class="form-group">
+            <label for="promoCode">Promo Code:</label>
+            <input type="text" class="form-control" id="promoCode">
+          </div>
+          <br>
+          <input type="submit" value="Book" class="button">
+        </form>
+      </div>
+    </div>
+      
     </center>
-    </div>
   </div>
 
   <!-- FACILITIES DESC -->
