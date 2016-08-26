@@ -1,5 +1,24 @@
+@media(min-width: 768px){
+	.navbar{
+		height:70px;
+	}
+	.leftNav{
+		float: right !important;
+	}
+}
+
 .container-fluid{
 	padding: 0;
+}
+
+.navbar-brand:focus{
+	color:#4A1717;
+	outline: none;
+}
+
+.navbar-nav:active:focus{
+	color:#4A1717;
+	outline: none;
 }
 
 .navbar{
@@ -11,6 +30,9 @@
 	color:#ddd395;
 }
 
+.navbar-nav li a:focus{
+	background-color: #4A1717;
+}
 .navbar-toggle .icon-bar{
 	background-color: #ddd395;
 }
@@ -30,6 +52,18 @@ ul.nav a:hover {
 
 .navbar-brand:hover{
 	color:#ddd395;
+}
+
+.dropdown-menu{
+	background-color: #282828;
+}
+
+.dropdown-menu li a{
+	color: white;
+}
+.dropdown-menu li a:hover{
+	color: white;
+	background-color: #323232 !important;
 }
 
 .active{
@@ -92,6 +126,7 @@ ul.nav a:hover {
 	height: auto;
 	background:url('../img/home4Dark.jpg');
 	background-size: cover;
+	background-position: center; 
 }
 
 td{
@@ -132,5 +167,34 @@ hr{
 
 .btn-primary:hover{
 	background: #C2B776;
+	border: none;
 	color: black;
+}
+.btn-primary:active{
+	background: #C2B776;
+	color: black;
+	border: none;
+}
+.btn-primary:focus{
+	background: #C2B776;
+	color: black;
+	border: none;
+}
+.btn-primary:active:focus{
+	background: #C2B776;
+	color: black;
+	border: none;
+}
+
+
+.socMedIcon a img{
+	width: 45px;
+	height: 45px;
+}
+
+.button{
+	background: #ddd395;
+	border: none;
+	color: black;
+}
 }
