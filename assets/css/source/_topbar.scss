@@ -1,0 +1,95 @@
+@media(min-width: 768px){
+	.navbar{
+		height:70px;
+	}
+	.leftNav{
+		float: right !important;
+	}
+}
+
+.navbar-brand:focus{
+	color: $color-red;
+	outline: none;
+}
+
+.navbar-nav:active:focus{
+	color: $color-red;
+	outline: none;
+}
+
+.navbar{
+	background-color: $color-red;
+	width: 100%;
+	@include material-shadow-depth-2();
+}
+
+.navbar-nav h4 {
+	color: $color-gold;
+    font-family: $font-serif !important;
+    font-weight: 700 !important;
+}
+
+.navbar-nav li a:focus{
+	background-color: $color-red;
+}
+.navbar-toggle .icon-bar{
+	background-color: $color-gold;
+}
+
+ul.nav a:hover { 
+	background-color: #5f2020 !important;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+	background-color: #5f2020;
+	box-shadow: 1px 1px 1px black;
+}
+
+.navbar-brand{
+	color: $color-gold;
+}
+
+.navbar-brand:hover{
+	color: $color-gold;
+}
+
+.topbar-brand-logo
+{
+	img
+	{
+		width: 95%;
+		min-width: 100px;
+		max-width: 150px;
+	}
+}
+
+.dropdown
+{
+	.dropdown-img
+	{
+		width: 20px;
+		height: auto;
+		margin: auto 10px;
+	}
+}
+
+.dropdown-menu{
+	background-color: $color-grey;
+
+	li
+	{
+		a
+		{
+			color: white;
+			padding: 10px 15px;
+			font-family: $font-serif !important;
+			font-weight: 700 !important;
+		}
+
+		a:hover
+		{
+			color: white;
+			background-color: #323232 !important;
+		}
+	}
+}

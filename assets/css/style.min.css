@@ -1,0 +1,205 @@
+@import "https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700";
+@media (min-width: 768px) {
+  .navbar {
+    height: 70px; }
+
+  .leftNav {
+    float: right !important; } }
+.navbar-brand:focus {
+  color: #4a1717;
+  outline: none; }
+
+.navbar-nav:active:focus {
+  color: #4a1717;
+  outline: none; }
+
+.navbar {
+  background-color: #4a1717;
+  width: 100%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+.navbar-nav h4 {
+  color: #ddd395;
+  font-family: "Droid Serif", serif !important;
+  font-weight: 700 !important; }
+
+.navbar-nav li a:focus {
+  background-color: #4a1717; }
+
+.navbar-toggle .icon-bar {
+  background-color: #ddd395; }
+
+ul.nav a:hover {
+  background-color: #5f2020 !important; }
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+  background-color: #5f2020;
+  box-shadow: 1px 1px 1px black; }
+
+.navbar-brand {
+  color: #ddd395; }
+
+.navbar-brand:hover {
+  color: #ddd395; }
+
+.topbar-brand-logo img {
+  width: 95%;
+  min-width: 100px;
+  max-width: 150px; }
+
+.dropdown .dropdown-img {
+  width: 20px;
+  height: auto;
+  margin: auto 10px; }
+
+.dropdown-menu {
+  background-color: #1e1e1e; }
+  .dropdown-menu li a {
+    color: white;
+    padding: 10px 15px;
+    font-family: "Droid Serif", serif !important;
+    font-weight: 700 !important; }
+  .dropdown-menu li a:hover {
+    color: white;
+    background-color: #323232 !important; }
+
+.active {
+  background-color: #5F2020; }
+
+.row {
+  margin-left: 0;
+  margin-right: 0; }
+
+.carousel {
+  overflow: hidden; }
+
+.carousel-inner {
+  width: 120%;
+  margin-left: -10%; }
+
+.carousel-image-mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&1.0+0,0+50,1.0+100 */
+  background: -moz-linear-gradient(top, black 0%, transparent 50%, black 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, black 0%, transparent 50%, black 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, black 0%, transparent 50%, black 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#66000000',GradientType=0 );
+  /* IE6-9 */ }
+
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+  color: #ddd395;
+  text-shadow: 0px 0px 3px black;
+  font-family: "Droid Serif", serif; }
+  .carousel-caption h3 {
+    font-size: 32px; }
+  .carousel-caption p {
+    font-size: 24px; }
+
+.bookingDiv {
+  width: 100%;
+  background-color: #4A1717;
+  padding: 20px; }
+
+.facilitiesDiv {
+  background-color: #141414;
+  padding: 10px; }
+
+.facilityDesc {
+  margin: 10px; }
+
+.roomImgDiv {
+  background-color: #1e1e1e;
+  padding: 0; }
+
+.roomImg {
+  width: 99.9%; }
+
+.roomDetails {
+  background-color: #1e1e1e; }
+
+.reserve {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  background: url("../img/home4Dark.jpg");
+  background-size: cover;
+  background-position: center; }
+
+td {
+  text-align: center; }
+
+input {
+  height: 2em;
+  /*CHANGE*/
+  width: 100%;
+  text-align: center;
+  color: black; }
+
+footer {
+  width: 100%;
+  background-color: #4A1717;
+  padding: 30px; }
+
+.foot .col-xs-6 h5 {
+  color: white; }
+
+h3 {
+  margin: 0; }
+
+hr {
+  background-color: #ddd395;
+  opacity: 0.5; }
+
+.btn-primary {
+  background: #ddd395;
+  border: none;
+  color: black; }
+
+.btn-primary:hover {
+  background: #C2B776;
+  border: none;
+  color: black; }
+
+.btn-primary:active {
+  background: #C2B776;
+  color: black;
+  border: none; }
+
+.btn-primary:focus {
+  background: #C2B776;
+  color: black;
+  border: none; }
+
+.btn-primary:active:focus {
+  background: #C2B776;
+  color: black;
+  border: none; }
+
+.socMedIcon a img {
+  width: 45px;
+  height: 45px; }
+
+.button {
+  background: #ddd395;
+  border: none;
+  color: black; }
+
+.container-fluid {
+  padding: 0; }
+
+/*# sourceMappingURL=style.min.css.map */

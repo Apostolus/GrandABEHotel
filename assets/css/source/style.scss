@@ -1,0 +1,39 @@
+// Import the fonts
+@import 'https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700';
+$font-serif : 'Droid Serif', serif;
+$font-sans  : 'Droid Sans', sans-serif;
+
+// Theme Colours
+$color-background   : #141414;
+$color-grey         : #1e1e1e;
+$color-red          : #4a1717;
+$color-gold         : #ddd395;
+
+// Material Shadow
+@mixin material-shadow() {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+@mixin material-shadow-depth-2() {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+// Border radius
+@mixin border-radius($topleft, $topright, $botright, $botleft) {
+  -webkit-border-radius: $topleft $topright $botright $botleft;
+     -moz-border-radius: $topleft $topright $botright $botleft;
+      -ms-border-radius: $topleft $topright $botright $botleft;
+          border-radius: $topleft $topright $botright $botleft;
+}
+
+// Import Components
+@import 'topbar';
+@import 'home';
+
+// Global overrides
+.container-fluid
+{
+    padding: 0;
+}
+
+
