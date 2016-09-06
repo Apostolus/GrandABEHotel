@@ -1,3 +1,52 @@
+@media(min-width: 768px){
+	.bookingDiv
+	{
+		.button
+		{
+			width: 100%;
+			max-width: none;
+		}
+	}
+}
+
+section
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: $color-background;
+	text-align: center;
+	h1
+	{
+		font-family: $font-serif;
+		color: $color-gold;
+		font-size: 32px;
+		font-weight: 700;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	>img
+	{
+		margin: 20px auto 40px auto;
+		width: 80%;
+		max-width: 400px;
+	}
+
+	.press-release-container
+	{
+		background-color: $color-grey;
+		height: 260px;
+		.press-release-image
+		{
+			height: 100%;
+			width: 400px;
+			float: left;
+			background-size: cover;
+			background-position: center;
+		}
+	}
+}
+
 .active{
 	background-color: #5F2020;
 }
@@ -52,6 +101,24 @@
 	width: 100%;
 	background-color: #4A1717;
 	padding:20px;
+	font-weight: 700;
+
+	label
+	{
+		font-size: 16px;
+		color: $color-gold;
+		font-family: $font-sans;
+	}
+
+	.button
+	{
+		width: 100%;
+		height: 60px;
+		max-width: 200px;
+		border-radius: 5px;
+		font-size: 22px;
+		margin: 10px auto;
+	}
 }
 
 .facilitiesDiv{

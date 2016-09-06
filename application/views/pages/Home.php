@@ -68,67 +68,45 @@
 
 	<!-- BOOKING -->
 	<div class="bookingDiv">
-		<center>
-			<!-- for MD &LG -->
-			<div class="row visible-md visible-lg">
-				<div class="col-xs-12">
-					<form>
-						<!--<table style="width:60%; color:#ddd395;">
-							<tr>
-							<td>Check-In</td>
-							<td>Check-Out</td>
-							<td>Adults</td>
-							<td>Children</td>
-							<td>Promo Code</td>
-							</tr>
-							<tr>
-							<td><input type="date" id="checkin"></td>
-							<td><input type="date" id="checkout"></td>
-							<td><input type="text" id="adult" onkeypress='return event.charCode >= 48 && event.charCode <= 57' placeholder="numbers only"></td>
-							<td><input type="text" id="children" onkeypress='return event.charCode >= 48 && event.charCode <= 57' placeholder="numbers only"></td>
-							<td><input type="text" id="promoCode"></td>
-							<td><input type="submit" value="Book" class="button"></td>
-							</tr>
-						</table>-->
-					</form>
-				</div>
+		<form class="row container" style="margin: auto">
+			<div class="col-xs-12 col-md-2">
+				<label for="checkin">Check-In</label>
+				<input type="date" class="form-control" id="checkin">
 			</div>
-			
-			<!-- for XS & SM -->
-			<div class="row visible-xs visible-sm" style="width:65%">
-				<div class="col-xs-12">
-					<form style=" color:#ddd395">     
-					<div class="form-group">
-						<label for="checkin">Check-In:</label>
-						<input type="date" class="form-control" id="checkin">
-					</div>
-					<div class="form-group">
-						<label for="checkout">Check-Out:</label>
-						<input type="date" class="form-control" id="checkout">
-					</div>
-					<div class="form-group">
-						<label for="adult">Adults:</label>
-						<input type="text" class="form-control" id="adult" onkeypress='return event.charCode >= 48 && event.charCode <= 57' placeholder="numbers only">
-					</div>
-					<div class="form-group">
-						<label for="adult">Children:</label>
-						<input type="text" class="form-control" id="children" onkeypress='return event.charCode >= 48 && event.charCode <= 57' placeholder="numbers only">
-					</div>
-					<div class="form-group">
-						<label for="promoCode">Promo Code:</label>
-						<input type="text" class="form-control" id="promoCode">
-					</div>
-					<br>
-					<input type="submit" value="Book" class="button">
-					</form>
-				</div>
+			<div class="col-xs-12 col-md-2">
+				<label for="checkin">Check-Out</label>
+				<input type="date" class="form-control" id="checkin">
 			</div>
-		
-		</center>
+			<div class="col-xs-12 col-md-1">
+				<label for="checkin">Adults</label>
+				<select name="adults" class="form-control">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+			</div>
+			<div class="col-xs-12 col-md-1">
+				<label for="checkin">Children</label>
+				<select name="adults" class="form-control">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				<label for="checkin">Promo Code</label>
+				<input type="text" class="form-control" id="checkin">
+			</div>
+			<div class="col-xs-12 col-md-3">
+				<input type="submit" value="BOOK" class="button">
+			</div>
+		</form>
 	</div>
 
 	<!-- FACILITIES DESC -->
-	<div class="facilitiesDiv">
+	<!--<div class="facilitiesDiv">
 		<center>
 			<div class="row" style="width:75%">
 				<a href="#">
@@ -161,7 +139,23 @@
 				</a>
 			</div>
 		</center>
-	</div>
+	</div>-->
+
+	<!-- Press Releases -->
+	<section id="section-press-release">
+		<h1>Press Release</h1>
+		<img src="assets/img/ui/line.png" class="header-divisor">
+
+		<div class="container">
+			<div class="press-release-container">
+				<div class="press-release-image" style="background-image: url('assets/img/home4.jpg')"></div>
+				<h2><a href="#">Press Title</a></h2>
+				<h3>Press Date</h3>
+				<p>Morbi vestibulum tellus ut velit tincidunt pellentesque. Maecenas consequat erat nulla, in mollis tortor lobortis ut. Praesent dignissim lorem sit amet fermentum interdum. Pellentesque tempus nibh ut eleifend commodo. Morbi rhoncus ipsum at sem fermentum, nec tempus tellus gravida. Quisque luctus vel ante sit amet pulvinar.</p>
+				<a href="#">Read More</a>
+			</div>
+		</div>
+	</section>
 
 	<!-- ROOM IMAGES -->
 	<div class="roomImages hidden-xs hidden-sm">
