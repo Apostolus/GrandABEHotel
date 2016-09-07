@@ -12,7 +12,6 @@
 section
 {
 	padding-top: 50px;
-	padding-bottom: 50px;
 	background-color: $color-background;
 	text-align: center;
 	h1
@@ -35,15 +34,128 @@ section
 	.press-release-container
 	{
 		background-color: $color-grey;
-		height: 260px;
+		border-radius: 3px;
+		text-align: left;
+		margin: 30px auto;
 		.press-release-image
 		{
-			height: 100%;
-			width: 400px;
-			float: left;
+			height: 271px;
 			background-size: cover;
 			background-position: center;
+			border-radius: 3px 0 0 3px;
 		}
+		h2
+		{
+			font-family: $font-serif;
+			font-weight: 700;
+			color: $color-gold;
+			font-size: 26px;
+		}
+		h3
+		{
+			font-family: $font-sans;
+			color: $color-gold;
+			font-size: 18px;
+		}
+		p
+		{
+			height: 100px;
+  			overflow-y: auto;
+			font-family: $font-sans;
+			color: $color-white;
+			font-size: 16px;
+			margin: 20px auto;
+		}
+		.read-more-button
+		{
+			display: inline-block;
+			margin-bottom: 20px;
+			width: auto;
+			padding: 6px;
+			font-family: $font-sans;
+			font-weight: 700;
+			text-transform: uppercase;
+			color: black;
+			background-color: $color-gold;
+			border-radius: 3px;
+			text-decoration: none;
+		}
+	}
+}
+
+#section-virtual-tour
+{
+	.container
+	{
+		outline: 2px solid $color-gold;
+		padding: 0;
+		margin-bottom: 50px;
+	}
+	.video-container
+	{
+		float: none;
+		clear: both;
+		width: 100%;
+		position: relative;
+		padding-bottom: 56.25%;
+		//padding-top: 25px;
+		height: 0;
+		iframe 
+		{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.room-images-container
+	{
+		.room-images
+		{
+			height: 250px;
+			background-size: cover;
+			background-position: 50%;
+		}
+	}
+}
+
+#section-cta
+{
+	position: relative;
+	background-image: url('../img/home4.jpg');
+	background-size: cover;
+	background-position: 50%;
+	height: 600px;
+	width: 100%;
+	padding-top: 0;
+	h2
+	{
+		font-family: $font-serif;
+		color: white;
+		font-size: 26px;
+		text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+	}
+	img
+	{
+		display: block;
+		margin: 20px auto;
+	}
+	a
+	{
+		display: inline-block;
+		margin-bottom: 20px;
+		width: auto;
+		padding: 6px;
+		font-family: $font-sans;
+		font-weight: 700;
+		font-size: 24px;
+		text-transform: uppercase;
+		color: black;
+		background-color: $color-gold;
+		border-radius: 3px;
+		text-decoration: none;
 	}
 }
 
@@ -85,7 +197,7 @@ section
 	top: 50%;
 	transform: translateY(-50%);
 	bottom: initial;
-	color: $color-gold;
+	color: white;
 	text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
 	font-family: $font-serif;
 	h3
@@ -95,6 +207,7 @@ section
 	p
 	{
 		font-size: 24px;
+		color:white;
 	}
 }
 .bookingDiv{

@@ -6,6 +6,7 @@ $font-sans  : 'Droid Sans', sans-serif;
 // Theme Colours
 $color-background   : #141414;
 $color-grey         : #1e1e1e;
+$color-white		: #A0A0A0;
 $color-red          : #4a1717;
 $color-gold         : #ddd395;
 
@@ -34,6 +35,27 @@ $color-gold         : #ddd395;
 .container-fluid
 {
     padding: 0;
+}
+
+// Global helpers
+.valign-wrapper
+{
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	.valign
+	{
+		display: block;
+	}
+}
+
+.calign
+{
+	text-align: center;
+	margin: auto;
 }
 
 

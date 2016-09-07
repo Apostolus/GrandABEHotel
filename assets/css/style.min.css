@@ -69,7 +69,6 @@ ul.nav a:hover {
     max-width: none; } }
 section {
   padding-top: 50px;
-  padding-bottom: 50px;
   background-color: #141414;
   text-align: center; }
   section h1 {
@@ -85,13 +84,94 @@ section {
     max-width: 400px; }
   section .press-release-container {
     background-color: #1e1e1e;
-    height: 260px; }
+    border-radius: 3px;
+    text-align: left;
+    margin: 30px auto; }
     section .press-release-container .press-release-image {
-      height: 100%;
-      width: 400px;
-      float: left;
+      height: 271px;
       background-size: cover;
-      background-position: center; }
+      background-position: center;
+      border-radius: 3px 0 0 3px; }
+    section .press-release-container h2 {
+      font-family: "Droid Serif", serif;
+      font-weight: 700;
+      color: #ddd395;
+      font-size: 26px; }
+    section .press-release-container h3 {
+      font-family: "Droid Sans", sans-serif;
+      color: #ddd395;
+      font-size: 18px; }
+    section .press-release-container p {
+      height: 100px;
+      overflow-y: auto;
+      font-family: "Droid Sans", sans-serif;
+      color: #A0A0A0;
+      font-size: 16px;
+      margin: 20px auto; }
+    section .press-release-container .read-more-button {
+      display: inline-block;
+      margin-bottom: 20px;
+      width: auto;
+      padding: 6px;
+      font-family: "Droid Sans", sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: black;
+      background-color: #ddd395;
+      border-radius: 3px;
+      text-decoration: none; }
+
+#section-virtual-tour .container {
+  outline: 2px solid #ddd395;
+  padding: 0;
+  margin-bottom: 50px; }
+#section-virtual-tour .video-container {
+  float: none;
+  clear: both;
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0; }
+  #section-virtual-tour .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+#section-virtual-tour .room-images-container .room-images {
+  height: 250px;
+  background-size: cover;
+  background-position: 50%; }
+
+#section-cta {
+  position: relative;
+  background-image: url("../img/home4.jpg");
+  background-size: cover;
+  background-position: 50%;
+  height: 600px;
+  width: 100%;
+  padding-top: 0; }
+  #section-cta h2 {
+    font-family: "Droid Serif", serif;
+    color: white;
+    font-size: 26px;
+    text-shadow: 0px 0px 3px black; }
+  #section-cta img {
+    display: block;
+    margin: 20px auto; }
+  #section-cta a {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: auto;
+    padding: 6px;
+    font-family: "Droid Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: black;
+    background-color: #ddd395;
+    border-radius: 3px;
+    text-decoration: none; }
 
 .active {
   background-color: #5F2020; }
@@ -129,13 +209,14 @@ section {
   top: 50%;
   transform: translateY(-50%);
   bottom: initial;
-  color: #ddd395;
+  color: white;
   text-shadow: 0px 0px 3px black;
   font-family: "Droid Serif", serif; }
   .carousel-caption h3 {
     font-size: 32px; }
   .carousel-caption p {
-    font-size: 24px; }
+    font-size: 24px;
+    color: white; }
 
 .bookingDiv {
   width: 100%;
@@ -243,5 +324,19 @@ hr {
 
 .container-fluid {
   padding: 0; }
+
+.valign-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .valign-wrapper .valign {
+    display: block; }
+
+.calign {
+  text-align: center;
+  margin: auto; }
 
 /*# sourceMappingURL=style.min.css.map */
