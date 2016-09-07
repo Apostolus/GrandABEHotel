@@ -34,7 +34,7 @@
 					</li>
 				</ul>
 				<div class="nav navbar-nav col-sm-2 topbar-brand-logo hidden-xs">
-					<a href="#" style="padding:0"><center><img src="assets/img/top_logo.png"></center></a>
+					<a href="#" style="padding:0"><center><img src="assets/img/top_logo_small.png"></center></a>
 				</div>
 				<ul class="nav navbar-nav col-sm-5 ">
 					<li class="dropdown">
