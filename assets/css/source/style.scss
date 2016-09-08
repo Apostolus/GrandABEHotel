@@ -30,6 +30,7 @@ $color-gold         : #ddd395;
 // Import Components
 @import 'topbar';
 @import 'home';
+@import 'about';
 
 // Global overrides
 .container-fluid
@@ -56,6 +57,15 @@ $color-gold         : #ddd395;
 {
 	text-align: center;
 	margin: auto;
+}
+
+.rotate-90
+{
+	transform:          rotate(90deg);
+	-ms-transform:      rotate(90deg);
+	-moz-transform:     rotate(90deg);
+	-webkit-transform:  rotate(90deg);
+	-o-transform:       rotate(90deg);
 }
 
 

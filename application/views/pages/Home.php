@@ -18,7 +18,7 @@
 				<div class="carousel-image-mask"></div>
 				<div class="carousel-caption">
 					<h3>Room 1</h3>
-					<img src="assets/img/ui/line_shadow.png" width="50%" style="margin:2vw" class="hidden-xs">
+					<img src="<?php echo base_url(); ?>assets/img/ui/line_shadow.png" width="50%" style="margin:2vw" class="hidden-xs">
 				<p class="hidden-xs">Lorem Ipsum </p>
 				</div>
 			</div>
@@ -28,7 +28,7 @@
 				<div class="carousel-image-mask"></div>
 				<div class="carousel-caption">
 				<h3>Room 2</h3>
-				<img src="assets/img/ui/line_shadow.png" width="50%" style="margin:2vw" class="hidden-xs">
+				<img src="<?php echo base_url(); ?>assets/img/ui/line_shadow.png" width="50%" style="margin:2vw" class="hidden-xs">
 				<p class="hidden-xs">Ipsum Lorem</p>
 				</div>
 			</div>
@@ -38,7 +38,7 @@
 				<div class="carousel-image-mask"></div>
 				<div class="carousel-caption">
 				<h3>Room 3</h3>
-				<img src="assets/img/ui/line_shadow.png" width="50%" style="margin:2vw" class="hidden-xs">
+				<img src="<?php echo base_url(); ?>assets/img/ui/line_shadow.png" width="50%" style="margin:2vw" class="hidden-xs">
 				<p class="hidden-xs">Lorem Ipsum</p>
 				</div>
 			</div>
@@ -48,7 +48,7 @@
 				<div class="carousel-image-mask"></div>
 				<div class="carousel-caption">
 				<h3>Room 4</h3>
-				<img src="assets/img/ui/line_shadow.png" width="50%" style="margin:2vw" class="hidden-xs">
+				<img src="<?php echo base_url(); ?>assets/img/ui/line_shadow.png" width="50%" style="margin:2vw" class="hidden-xs">
 				<p class="hidden-xs">Lorem Ipsum</p>
 				</div>
 			</div>
@@ -144,11 +144,11 @@
 	<!-- Press Releases -->
 	<section id="section-press-release">
 		<h1>Press Release</h1>
-		<img src="assets/img/ui/line.png" class="header-divisor">
+		<img src="<?php echo base_url(); ?>assets/img/ui/line.png" class="header-divisor">
 
 		<div class="container">
 			<div class="press-release-container row">
-				<div class="press-release-image col-md-4 col-sm-12" style="background-image: url('assets/img/home4.jpg')"></div>
+				<div class="press-release-image col-md-4 col-sm-12" style="background-image: url('<?php echo base_url(); ?>assets/img/home4.jpg')"></div>
 				<div class="col-md-8 col-sm-12">
 					<a href="#"><h2>Press Title</h2></a>
 					<h3>9 October 2016</h3>
@@ -158,7 +158,7 @@
 			</div>
 
 			<div class="press-release-container row">
-				<div class="press-release-image col-md-4 col-sm-12" style="background-image: url('assets/img/home4.jpg')"></div>
+				<div class="press-release-image col-md-4 col-sm-12" style="background-image: url('<?php echo base_url(); ?>assets/img/home4.jpg')"></div>
 				<div class="col-md-8 col-sm-12">
 					<a href="#"><h2>Press Title</h2></a>
 					<h3>9 October 2016</h3>
@@ -168,7 +168,7 @@
 			</div>
 
 			<div class="press-release-container row">
-				<div class="press-release-image col-md-4 col-sm-12" style="background-image: url('assets/img/home4.jpg')"></div>
+				<div class="press-release-image col-md-4 col-sm-12" style="background-image: url('<?php echo base_url(); ?>assets/img/home4.jpg')"></div>
 				<div class="col-md-8 col-sm-12">
 					<a href="#"><h2>Press Title</h2></a>
 					<h3>9 October 2016</h3>
@@ -182,7 +182,7 @@
 	<!-- Hotel Virtual Tour -->
 	<section id="section-virtual-tour">
 		<h1>Virtual Tour</h1>
-		<img src="assets/img/ui/line.png" class="header-divisor">
+		<img src="<?php echo base_url(); ?>assets/img/ui/line.png" class="header-divisor">
 
 		<div class="container">
 			<div class="video-container">
@@ -191,16 +191,16 @@
 		</div>
 
 		<div class="room-images-container container-fluid row">
-			<div class="room-images col-xs-6" style="background-image: url('assets/img/home1.jpg')">
+			<div class="room-images col-xs-6" style="background-image: url('<?php echo base_url(); ?>assets/img/home1.jpg')">
 				
 			</div>
-			<div class="room-images col-xs-6" style="background-image: url('assets/img/home2.jpg')">
+			<div class="room-images col-xs-6" style="background-image: url('<?php echo base_url(); ?>assets/img/home2.jpg')">
 				
 			</div>
-			<div class="room-images col-xs-6" style="background-image: url('assets/img/home3.jpg')">
+			<div class="room-images col-xs-6" style="background-image: url('<?php echo base_url(); ?>assets/img/home3.jpg')">
 				
 			</div>
-			<div class="room-images col-xs-6" style="background-image: url('assets/img/home4.jpg')">
+			<div class="room-images col-xs-6" style="background-image: url('<?php echo base_url(); ?>assets/img/home4.jpg')">
 				
 			</div>
 		</div>
@@ -211,7 +211,7 @@
 		<div class="carousel-image-mask valign-wrapper">
 			<div class="valign calign">
 				<h2>Reserve Your Luxury Suite Now</h2>
-				<img src="assets/img/ui/line_shadow.png" class="header-divisor">
+				<img src="<?php echo base_url(); ?>assets/img/ui/line_shadow.png" class="header-divisor">
 				<a href="#">Online Reservation</a>
 			</div>
 		</div>

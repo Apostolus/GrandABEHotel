@@ -3,7 +3,7 @@
 		<footer>
 			<center>
 			<div class="foot row" style="width:80%">
-				<div class="col-xs-12 col-md-4"><img src="assets/img/logo.png" width='36%' style="margin: 20px"></div> <!--GANTI LOGONYA!!!!!!! -->
+				<div class="col-xs-12 col-md-4"><img src="<?php echo base_url(); ?>assets/img/logo.png" width='36%' style="margin: 20px"></div> <!--GANTI LOGONYA!!!!!!! -->
 				<div class="col-xs-6 col-md-4" style="text-align:left">
 					<h3 style="color: #ddd395">Contact Us</h3>
 					<br>
@@ -15,9 +15,9 @@
 				<div class="col-xs-6 col-md-4" style="text-align:left">
 					<h3 style="color: #ddd395">Keep in Touch</h3>
 					<br>
-					<span class="socMedIcon"><a href="#"><img src="assets/img/fb.png"></a></span>
-					<span class="socMedIcon"><a href="#"><img src="assets/img/twitter.png"></a></span>
-					<span class="socMedIcon"><a href="#"><img src="assets/img/ig.png"></a></span>
+					<span class="socMedIcon"><a href="#"><img src="<?php echo base_url(); ?>assets/img/fb.png"></a></span>
+					<span class="socMedIcon"><a href="#"><img src="<?php echo base_url(); ?>assets/img/twitter.png"></a></span>
+					<span class="socMedIcon"><a href="#"><img src="<?php echo base_url(); ?>assets/img/ig.png"></a></span>
 				</div>
 			</div>
 			</center>
