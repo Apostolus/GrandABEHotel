@@ -24,6 +24,14 @@ class Main extends CI_Controller
 		$this->load->view('pages/about');
 		$this->load->view('templates/footer');
 	}
+
+	// Philosophy
+	public function philosophy()
+	{
+		$this->load->view('templates/header');
+		$this->load->view('pages/philosophy');
+		$this->load->view('templates/footer');
+	}
 }
 
 ?>

@@ -123,6 +123,7 @@ section {
 
 #section-virtual-tour .container {
   outline: 2px solid #ddd395;
+  border-radius: 3px;
   padding: 0;
   margin-bottom: 50px; }
 #section-virtual-tour .video-container {
@@ -365,6 +366,58 @@ hr {
       z-index: 1;
       position: relative; }
 
+#section-philosophy {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  #section-philosophy img {
+    width: 60%;
+    max-width: 250px;
+    height: auto; }
+  #section-philosophy h2 {
+    font-family: "Droid Serif", serif;
+    font-size: 36px;
+    font-weight: 300;
+    color: #A0A0A0;
+    font-style: italic;
+    font-weight: 300;
+    margin: 60px auto 60px auto; }
+  #section-philosophy h3 {
+    font-family: "Droid Serif", serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #ddd395;
+    font-weight: 300;
+    margin: 30px auto 0 auto; }
+  #section-philosophy p {
+    font-family: "Droid Sans", sans-serif;
+    font-size: 18px;
+    color: white;
+    line-height: 1.7;
+    margin: 30px auto; }
+  #section-philosophy .about-logo {
+    padding: 50px;
+    width: 100%;
+    position: relative;
+    overflow: hidden; }
+    #section-philosophy .about-logo div {
+      background-image: url("../img/our.jpg");
+      background-size: cover;
+      background-position: 50%;
+      -webkit-filter: blur(5px);
+      -moz-filter: blur(5px);
+      -o-filter: blur(5px);
+      -ms-filter: blur(5px);
+      filter: blur(5px);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0; }
+    #section-philosophy .about-logo img {
+      z-index: 1;
+      position: relative; }
+
 .container-fluid {
   padding: 0; }
 
@@ -381,6 +434,9 @@ hr {
 .calign {
   text-align: center;
   margin: auto; }
+
+strong {
+  color: #ddd395; }
 
 .rotate-90 {
   transform: rotate(90deg);

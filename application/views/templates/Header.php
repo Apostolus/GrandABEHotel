@@ -29,7 +29,7 @@
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><h4><img src="<?php echo base_url(); ?>assets/img/ui/arrow.png" class="dropdown-img">The Hotel</h4></a>
 						<ul class="dropdown-menu dropdown-menu-right">
 							<li><a href="<?php echo site_url();?>about">About GrandABE</a></li>
-							<li><a href="#">Our Philosophy</a></li>
+							<li><a href="<?php echo site_url();?>philosophy">Our Philosophy</a></li>
 						</ul>
 					</li>
 				</ul>
