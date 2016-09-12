@@ -1,0 +1,146 @@
+@media(max-width: 768px){
+	#section-rooms
+	{
+		.room-details-slideshow
+		{
+			.item
+			{
+				height: 100px;
+			}
+		}
+	}
+}
+
+#section-rooms
+{
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	h2
+	{
+		font-family: $font-serif;
+		font-size: 36px;
+		font-weight: 300;
+		color: $color-white;
+		font-style: italic;
+		font-weight: 300;
+		margin: 60px auto 60px auto;
+	}
+	h3
+	{
+		font-family: $font-serif;
+		font-size: 32px;
+		font-weight: 700;
+		color: $color-gold;
+		font-weight: 300;
+		margin: 30px auto 0 auto;
+	}
+	p
+	{
+		font-family: $font-sans;
+		font-size: 18px;
+		color: white;
+		line-height: 1.7;
+		margin: 30px auto;
+	}
+
+	.room-details-container
+	{
+		background-size: cover;
+		background-position: 50%;
+		position: relative;
+
+		>div
+		{
+			margin: auto;
+		}
+
+		.room-details-header
+		{
+			h1
+			{
+				line-height: 100px;
+			}
+			position: relative;
+			margin-bottom: 40px;
+			background-color: rgba(0, 0, 0, 0.5);
+		}
+
+		.room-details-slideshow
+		{
+			margin-bottom: 20px;
+			>div
+			{
+				border-radius: 5px;
+				@include material-shadow-depth-2();
+				.item
+				{
+					height: 350px;
+					width: 100%;
+					background-size: cover;
+					background-position: 50%;
+				}
+			}
+		}
+
+		.room-details-content
+		{
+			margin-bottom: 80px;
+			>div
+			{
+				position: relative;
+				height: 350px;
+				width: 100%;
+				background-color: $color-grey;
+				padding: 0;
+				border-radius: 5px;
+				@include material-shadow-depth-2();
+				font-family: $font-sans;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 28px;
+				color: white;
+				text-align: left;
+				h1
+				{
+					display: block;
+					margin: 0;
+					height: 60px;
+					line-height: 60px;
+					background-color: $color-red;
+					@include border-radius(5px, 5px, 0, 0);
+					text-align: center;
+					font-size: 24px;
+					@include material-shadow();
+				}
+				>div
+				{
+					padding: 25px 10px;
+					ul
+					{
+
+					}
+				}
+				.room-price
+				{
+					position: absolute;
+					bottom: 25px;
+					right: 15px;
+					font-family: $font-sans;
+					color: white;
+					font-size: 20px;
+					span
+					{
+						padding: 10px;
+						color: $color-gold;
+						border-radius: 3px;
+						font-size: 20px;
+						font-weight: 700;
+						font-family: $font-sans;
+						border: 1px solid $color-gold;
+					}
+				}
+			}
+		}
+	}
+}

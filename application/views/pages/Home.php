@@ -14,27 +14,27 @@
 		<div class="carousel-inner" role="listbox">
 
 			<div class="item active">
-				<img src="assets/img/home1.jpg" alt="Room 1" width="100%">
+				<img src="<?php echo base_url(); ?>assets/img/home1.jpg" alt="Room 1" width="100%">
 				<div class="carousel-image-mask"></div>
 				<div class="carousel-caption">
 					<h3>Room 1</h3>
 					<img src="<?php echo base_url(); ?>assets/img/ui/line_shadow.png" width="50%" style="margin:2vw" class="hidden-xs">
-				<p class="hidden-xs">Lorem Ipsum </p>
+				<p class="hidden-xs">Cras bibendum nisl id nunc egestas tincidunt. Aliquam quis dignissim nisi. Mauris euismod egestas nisi sed ullamcorper. Mauris scelerisque, lectus a mattis pharetra, enim nisl molestie augue, ac tincidunt nunc elit a augue. Sed commodo, leo eget volutpat auctor, risus sapien finibus felis, sed vestibulum erat ligula vitae justo.</p>
 				</div>
 			</div>
 
 			<div class="item">
-				<img src="assets/img/home2.jpg" alt="Room 2" width="100%">
+				<img src="<?php echo base_url(); ?>assets/img/home2.jpg" alt="Room 2" width="100%">
 				<div class="carousel-image-mask"></div>
 				<div class="carousel-caption">
 				<h3>Room 2</h3>
 				<img src="<?php echo base_url(); ?>assets/img/ui/line_shadow.png" width="50%" style="margin:2vw" class="hidden-xs">
-				<p class="hidden-xs">Ipsum Lorem</p>
+				<p class="hidden-xs">Cras bibendum nisl id nunc egestas tincidunt. Aliquam quis dignissim nisi. Mauris euismod egestas nisi sed ullamcorper. Mauris scelerisque, lectus a mattis pharetra, enim nisl molestie augue, ac tincidunt nunc elit a augue. Sed commodo, leo eget volutpat auctor, risus sapien finibus felis, sed vestibulum erat ligula vitae justo.</p>
 				</div>
 			</div>
 			
 			<div class="item">
-				<img src="assets/img/home3.jpg" alt="Room 3" width="100%">
+				<img src="<?php echo base_url(); ?>assets/img/home3.jpg" alt="Room 3" width="100%">
 				<div class="carousel-image-mask"></div>
 				<div class="carousel-caption">
 				<h3>Room 3</h3>
@@ -44,7 +44,7 @@
 			</div>
 
 			<div class="item">
-				<img src="assets/img/home4.jpg" alt="Room 4" width="100%">
+				<img src="<?php echo base_url(); ?>assets/img/home4.jpg" alt="Room 4" width="100%">
 				<div class="carousel-image-mask"></div>
 				<div class="carousel-caption">
 				<h3>Room 4</h3>

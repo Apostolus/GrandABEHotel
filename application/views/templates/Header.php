@@ -24,7 +24,7 @@
 			</div>
 			<div class="collapse navbar-collapse" id="ABENavbar">
 				<ul class="nav navbar-nav col-sm-5">
-					<li class="leftNav"><a href="#"><h4>Rooms</h4></a></li>
+					<li class="leftNav"><a href="<?php echo site_url();?>rooms"><h4>Rooms</h4></a></li>
 					<li class="dropdown leftNav">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><h4><img src="<?php echo base_url(); ?>assets/img/ui/arrow.png" class="dropdown-img">The Hotel</h4></a>
 						<ul class="dropdown-menu dropdown-menu-right">

@@ -1,4 +1,40 @@
 @import "https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700";
+.gradient-mask-top-black {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&1.0+0,0.2+100 */
+  background: -moz-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.2) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.2) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0.2) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#33000000',GradientType=0 );
+  /* IE6-9 */ }
+
+.gradient-mask-full-light {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.9+0,0.4+50,0.9+100 */
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.9) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.9) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.9) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', endColorstr='#e6000000',GradientType=0 );
+  /* IE6-9 */ }
+
 @media (min-width: 768px) {
   .navbar {
     height: 70px; }
@@ -174,9 +210,6 @@ section {
     border-radius: 3px;
     text-decoration: none; }
 
-.active {
-  background-color: #5F2020; }
-
 .row {
   margin-left: 0;
   margin-right: 0; }
@@ -188,36 +221,25 @@ section {
   width: 120%;
   margin-left: -10%; }
 
-.carousel-image-mask {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&1.0+0,0+50,1.0+100 */
-  background: -moz-linear-gradient(top, black 0%, transparent 50%, black 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, black 0%, transparent 50%, black 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, black 0%, transparent 50%, black 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#66000000',GradientType=0 );
-  /* IE6-9 */ }
-
 .carousel-caption {
   top: 50%;
   transform: translateY(-50%);
   bottom: initial;
   color: white;
-  text-shadow: 0px 0px 3px black;
-  font-family: "Droid Serif", serif; }
+  font-family: "Droid Sans", sans-serif;
+  padding-left: 10%;
+  padding-right: 10%; }
   .carousel-caption h3 {
-    font-size: 32px; }
+    font-size: 36px;
+    font-weight: 700;
+    color: #ddd395;
+    font-family: "Droid Serif", serif;
+    text-shadow: 0px 0px 5px black, 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 8px rgba(0, 0, 0, 0.1), 0px 18px 15px rgba(0, 0, 0, 0.1); }
   .carousel-caption p {
-    font-size: 24px;
-    color: white; }
+    font-size: 22px;
+    color: white;
+    padding: 20px;
+    text-shadow: 0px 1px 0px black, 0px 1px 2px black, 0px 2px 4px black; }
 
 .bookingDiv {
   width: 100%;
@@ -417,6 +439,103 @@ hr {
     #section-philosophy .about-logo img {
       z-index: 1;
       position: relative; }
+
+@media (max-width: 768px) {
+  #section-rooms .room-details-slideshow .item {
+    height: 100px; } }
+#section-rooms {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  #section-rooms h2 {
+    font-family: "Droid Serif", serif;
+    font-size: 36px;
+    font-weight: 300;
+    color: #A0A0A0;
+    font-style: italic;
+    font-weight: 300;
+    margin: 60px auto 60px auto; }
+  #section-rooms h3 {
+    font-family: "Droid Serif", serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #ddd395;
+    font-weight: 300;
+    margin: 30px auto 0 auto; }
+  #section-rooms p {
+    font-family: "Droid Sans", sans-serif;
+    font-size: 18px;
+    color: white;
+    line-height: 1.7;
+    margin: 30px auto; }
+  #section-rooms .room-details-container {
+    background-size: cover;
+    background-position: 50%;
+    position: relative; }
+    #section-rooms .room-details-container > div {
+      margin: auto; }
+    #section-rooms .room-details-container .room-details-header {
+      position: relative;
+      margin-bottom: 40px;
+      background-color: rgba(0, 0, 0, 0.5); }
+      #section-rooms .room-details-container .room-details-header h1 {
+        line-height: 100px; }
+    #section-rooms .room-details-container .room-details-slideshow {
+      margin-bottom: 20px; }
+      #section-rooms .room-details-container .room-details-slideshow > div {
+        border-radius: 5px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+        #section-rooms .room-details-container .room-details-slideshow > div .item {
+          height: 350px;
+          width: 100%;
+          background-size: cover;
+          background-position: 50%; }
+    #section-rooms .room-details-container .room-details-content {
+      margin-bottom: 80px; }
+      #section-rooms .room-details-container .room-details-content > div {
+        position: relative;
+        height: 350px;
+        width: 100%;
+        background-color: #1e1e1e;
+        padding: 0;
+        border-radius: 5px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        font-family: "Droid Sans", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: white;
+        text-align: left; }
+        #section-rooms .room-details-container .room-details-content > div h1 {
+          display: block;
+          margin: 0;
+          height: 60px;
+          line-height: 60px;
+          background-color: #4a1717;
+          -webkit-border-radius: 5px 5px 0 0;
+          -moz-border-radius: 5px 5px 0 0;
+          -ms-border-radius: 5px 5px 0 0;
+          border-radius: 5px 5px 0 0;
+          text-align: center;
+          font-size: 24px;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+        #section-rooms .room-details-container .room-details-content > div > div {
+          padding: 25px 10px; }
+        #section-rooms .room-details-container .room-details-content > div .room-price {
+          position: absolute;
+          bottom: 25px;
+          right: 15px;
+          font-family: "Droid Sans", sans-serif;
+          color: white;
+          font-size: 20px; }
+          #section-rooms .room-details-container .room-details-content > div .room-price span {
+            padding: 10px;
+            color: #ddd395;
+            border-radius: 3px;
+            font-size: 20px;
+            font-weight: 700;
+            font-family: "Droid Sans", sans-serif;
+            border: 1px solid #ddd395; }
 
 .container-fluid {
   padding: 0; }
