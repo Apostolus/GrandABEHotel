@@ -1,11 +1,12 @@
-@media(min-width: 768px){
+@media(max-width: 960px){
 	.navbar{
-		height:70px;
-	}
-	.leftNav{
-		float: right !important;
+		height:40px !important;
 	}
 }
+
+.leftNav{
+		float: right !important;
+	}
 
 .navbar-brand:focus{
 	color: $color-red;
@@ -20,6 +21,7 @@
 .navbar{
 	background-color: $color-red;
 	width: 100%;
+	height: 70px;
 	@include material-shadow-depth-2();
 }
 
