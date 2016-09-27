@@ -538,6 +538,66 @@ hr {
             font-family: "Droid Sans", sans-serif;
             border: 1px solid #ddd395; }
 
+#section-reservation {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  #section-reservation #reservation-form {
+    position: relative; }
+
+@keyframes pulse {
+  50% {
+    background: #ddd395; } }
+.form-loading-active {
+  position: absolute;
+  text-align: center;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  border: 3px solid #ddd395;
+  background-color: rgba(20, 20, 20, 0.9); }
+  .form-loading-active h1 {
+    font-family: "Droid Sans", sans-serif;
+    color: #ddd395;
+    font-size: 26px;
+    text-align: center;
+    margin: 30px auto; }
+  .form-loading-active p {
+    font-family: "Droid Sans", sans-serif;
+    color: #ddd395;
+    font-size: 16px;
+    text-align: center;
+    margin: 30px auto; }
+  .form-loading-active > div {
+    margin: auto; }
+
+.loading-pulse {
+  margin: 30px auto;
+  text-align: center;
+  display: block;
+  position: relative;
+  width: 16px;
+  height: 64px;
+  background: rgba(221, 211, 149, 0.2);
+  animation: pulse 500ms infinite;
+  animation-delay: 166.66667ms; }
+  .loading-pulse:before, .loading-pulse:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 42.66667px;
+    width: 16px;
+    background: rgba(221, 211, 149, 0.2);
+    top: 50%;
+    transform: translateY(-50%);
+    animation: pulse 500ms infinite; }
+  .loading-pulse:before {
+    left: -32px; }
+  .loading-pulse:after {
+    left: 32px;
+    animation-delay: 333.33333ms; }
+
 .container-fluid {
   padding: 0; }
 

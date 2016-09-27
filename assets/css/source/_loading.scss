@@ -1,0 +1,72 @@
+$base-line-height: 64px;
+$off-white: rgba($color-gold, 0.2);
+$pulse-duration: 500ms;
+
+@keyframes pulse {
+	50% {
+		background: $color-gold;
+	}
+}
+
+.form-loading-active
+{
+	position: absolute;
+	text-align: center;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	border: 3px solid $color-gold;
+	background-color: rgba($color-background, 0.9);
+	h1
+	{
+		font-family: $font-sans;
+		color: $color-gold;
+		font-size: 26px;
+		text-align: center;
+		margin: 30px auto;
+	}
+	p
+	{
+		font-family: $font-sans;
+		color: $color-gold;
+		font-size: 16px;
+		text-align: center;
+		margin: 30px auto;
+	}
+	>div
+	{
+		margin: auto;
+	}
+}
+
+.loading-pulse {
+	margin: 30px auto;
+	text-align: center;
+	display: block;
+	position: relative;
+	width: ($base-line-height / 4);
+	height: $base-line-height;
+	background: $off-white;
+	animation: pulse $pulse-duration infinite;
+	animation-delay: ($pulse-duration / 3);
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		display: block;
+		height: ($base-line-height / 1.5);
+		width: ($base-line-height / 4);
+		background: $off-white;
+		top: 50%;
+		transform: translateY(-50%);
+		animation: pulse $pulse-duration infinite;
+	}
+	&:before {
+		left: -($base-line-height / 2);
+	}
+	&:after {
+		left: ($base-line-height / 2);
+		animation-delay: ($pulse-duration / 1.5);
+	}
+}

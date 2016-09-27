@@ -66,11 +66,12 @@ $color-gold         : #ddd395;
 
 // Import Components
 @import 'topbar';
-@import 'success';
 @import 'home';
 @import 'about';
 @import 'philosophy';
 @import 'rooms';
+@import 'reservation';
+@import 'loading';
 
 // Global overrides
 .container-fluid

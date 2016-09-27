@@ -8,6 +8,15 @@
 			<div class="reservation-form-container">
 				<form id="reservation-form">
 
+					<!-- Layer for blocking the form when it's loading -->
+					<div class="form-loading-active valign-wrapper">
+						<div class="valign">
+							<div class="loading-pulse"></div>
+							<h1>Please wait</h1>
+							<p>Submitting your information</p>
+						</div>
+					</div>
+
 					<!-- User title -->
 					<div class="form-group" data-for="reservation_title">
 						<label for="reservation_title">Your Title</label>

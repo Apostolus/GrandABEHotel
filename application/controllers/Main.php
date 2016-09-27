@@ -45,6 +45,23 @@ class Main extends CI_Controller
 	// Reservation Page
 	public function reservation()
 	{
+		// Array of all form field names
+		$form_fields = array(
+			'reservation_title',
+			'reservation_first_name',
+			'reservation_last_name',
+			'reservation_mobile_number',
+			'reservation_email',
+			'reservation_email_confirmation',
+			'reservation_bb_pin',
+			'reservation_checkin',
+			'reservation_checkout',
+			'reservation_number_of_guests',
+			'reservation_room_type',
+			'reservation_number_of_rooms',
+			'reservation_additional_messages'
+		);
+		
 		// Set the form validation rules
 		$validation_rules = array(
 			array(
@@ -142,7 +159,16 @@ class Main extends CI_Controller
 			{
 				$response['success'] = false;
 				$response['error_title'] = 'There are some errors in your form.';
-				$response['error_message'] = 'Please fix some errors below.';
+				$response['error_message'] = array();
+
+				// Send all of the errors
+				foreach($form_fields as $field_name)
+				{
+					if (!empty(form_error($field_name)))
+					{
+						$response['error_message']['$field_name'] = form_error($field_name);
+					}
+				}
 			}
 			echo json_encode($response);
 		}
