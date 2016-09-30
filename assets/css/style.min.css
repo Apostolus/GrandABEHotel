@@ -290,13 +290,6 @@ section {
 td {
   text-align: center; }
 
-input {
-  height: 2em;
-  /*CHANGE*/
-  width: 100%;
-  text-align: center;
-  color: black; }
-
 footer {
   width: 100%;
   background-color: #4A1717;
@@ -543,7 +536,24 @@ hr {
   padding-top: 100px;
   padding-bottom: 100px; }
   #section-reservation #reservation-form {
-    position: relative; }
+    position: relative;
+    text-align: left;
+    color: white;
+    font-family: "Droid Sans", sans-serif;
+    font-size: 16px;
+    background-color: #4a1717;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 3px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+    #section-reservation #reservation-form label {
+      font-size: 18px;
+      font-family: "Droid Serif", serif;
+      color: #ddd395; }
+    #section-reservation #reservation-form .btn {
+      background-color: #ddd395;
+      font-family: "Droid Sans", sans-serif;
+      font-size: 22px; }
 
 @keyframes pulse {
   50% {
@@ -556,7 +566,8 @@ hr {
   top: 0;
   left: 0;
   border: 3px solid #ddd395;
-  background-color: rgba(20, 20, 20, 0.9); }
+  background-color: rgba(20, 20, 20, 0.9);
+  transition: opacity 0.2s; }
   .form-loading-active h1 {
     font-family: "Droid Sans", sans-serif;
     color: #ddd395;
@@ -571,6 +582,9 @@ hr {
     margin: 30px auto; }
   .form-loading-active > div {
     margin: auto; }
+
+.form-loading-disabled {
+  display: none !important; }
 
 .loading-pulse {
   margin: 30px auto;
