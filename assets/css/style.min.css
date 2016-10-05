@@ -1,4 +1,5 @@
 @import "https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700";
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet';
 .gradient-mask-top-black {
   width: 100%;
   height: 100%;
@@ -57,7 +58,7 @@
 
 .navbar-nav h4 {
   color: #ddd395;
-  font-family: "Droid Serif", serif !important;
+  font-family: "Droid", serif !important;
   font-weight: 700 !important; }
 
 .navbar-nav li a:focus {
@@ -94,7 +95,7 @@ ul.nav a:hover {
   .dropdown-menu li a {
     color: white;
     padding: 10px 15px;
-    font-family: "Droid Serif", serif !important;
+    font-family: "Droid", serif !important;
     font-weight: 700 !important; }
   .dropdown-menu li a:hover {
     color: white;
@@ -109,7 +110,7 @@ section {
   background-color: #141414;
   text-align: center; }
   section h1 {
-    font-family: "Droid Serif", serif;
+    font-family: "Droid", serif;
     color: #ddd395;
     font-size: 32px;
     font-weight: 700;
@@ -130,18 +131,18 @@ section {
       background-position: center;
       border-radius: 3px 0 0 3px; }
     section .press-release-container h2 {
-      font-family: "Droid Serif", serif;
+      font-family: "Droid", serif;
       font-weight: 700;
       color: #ddd395;
       font-size: 26px; }
     section .press-release-container h3 {
-      font-family: "Droid Sans", sans-serif;
+      font-family: "Roboto", sans-serif;
       color: #ddd395;
       font-size: 18px; }
     section .press-release-container p {
       height: 100px;
       overflow-y: auto;
-      font-family: "Droid Sans", sans-serif;
+      font-family: "Roboto", sans-serif;
       color: #A0A0A0;
       font-size: 16px;
       margin: 20px auto; }
@@ -150,7 +151,7 @@ section {
       margin-bottom: 20px;
       width: auto;
       padding: 6px;
-      font-family: "Droid Sans", sans-serif;
+      font-family: "Roboto", sans-serif;
       font-weight: 700;
       text-transform: uppercase;
       color: black;
@@ -190,7 +191,7 @@ section {
   width: 100%;
   padding-top: 0; }
   #section-cta h2 {
-    font-family: "Droid Serif", serif;
+    font-family: "Droid", serif;
     color: white;
     font-size: 26px;
     text-shadow: 0px 0px 3px black; }
@@ -202,7 +203,7 @@ section {
     margin-bottom: 20px;
     width: auto;
     padding: 6px;
-    font-family: "Droid Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 24px;
     text-transform: uppercase;
@@ -227,14 +228,14 @@ section {
   transform: translateY(-50%);
   bottom: initial;
   color: white;
-  font-family: "Droid Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   padding-left: 10%;
   padding-right: 10%; }
   .carousel-caption h3 {
     font-size: 36px;
     font-weight: 700;
     color: #ddd395;
-    font-family: "Droid Serif", serif;
+    font-family: "Droid", serif;
     text-shadow: 0px 0px 5px black, 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 8px rgba(0, 0, 0, 0.1), 0px 18px 15px rgba(0, 0, 0, 0.1); }
   .carousel-caption p {
     font-size: 22px;
@@ -250,7 +251,7 @@ section {
   .bookingDiv label {
     font-size: 16px;
     color: #ddd395;
-    font-family: "Droid Sans", sans-serif; }
+    font-family: "Roboto", sans-serif; }
   .bookingDiv .button {
     width: 100%;
     height: 60px;
@@ -348,13 +349,13 @@ hr {
     max-width: 250px;
     height: auto; }
   #section-about h2 {
-    font-family: "Droid Serif", serif;
+    font-family: "Droid", serif;
     font-size: 32px;
     font-weight: 700;
     color: #ddd395;
     margin: 50px auto 0 auto; }
   #section-about p {
-    font-family: "Droid Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 18px;
     color: white;
     line-height: 1.7;
@@ -391,7 +392,7 @@ hr {
     max-width: 250px;
     height: auto; }
   #section-philosophy h2 {
-    font-family: "Droid Serif", serif;
+    font-family: "Droid", serif;
     font-size: 36px;
     font-weight: 300;
     color: #A0A0A0;
@@ -399,14 +400,14 @@ hr {
     font-weight: 300;
     margin: 60px auto 60px auto; }
   #section-philosophy h3 {
-    font-family: "Droid Serif", serif;
+    font-family: "Droid", serif;
     font-size: 32px;
     font-weight: 700;
     color: #ddd395;
     font-weight: 300;
     margin: 30px auto 0 auto; }
   #section-philosophy p {
-    font-family: "Droid Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 18px;
     color: white;
     line-height: 1.7;
@@ -442,7 +443,7 @@ hr {
   padding-top: 100px;
   padding-bottom: 100px; }
   #section-rooms h2 {
-    font-family: "Droid Serif", serif;
+    font-family: "Droid", serif;
     font-size: 36px;
     font-weight: 300;
     color: #A0A0A0;
@@ -450,14 +451,14 @@ hr {
     font-weight: 300;
     margin: 60px auto 60px auto; }
   #section-rooms h3 {
-    font-family: "Droid Serif", serif;
+    font-family: "Droid", serif;
     font-size: 32px;
     font-weight: 700;
     color: #ddd395;
     font-weight: 300;
     margin: 30px auto 0 auto; }
   #section-rooms p {
-    font-family: "Droid Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 18px;
     color: white;
     line-height: 1.7;
@@ -494,7 +495,7 @@ hr {
         padding: 0;
         border-radius: 5px;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-        font-family: "Droid Sans", sans-serif;
+        font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 28px;
@@ -519,7 +520,7 @@ hr {
           position: absolute;
           bottom: 25px;
           right: 15px;
-          font-family: "Droid Sans", sans-serif;
+          font-family: "Roboto", sans-serif;
           color: white;
           font-size: 20px; }
           #section-rooms .room-details-container .room-details-content > div .room-price span {
@@ -528,7 +529,7 @@ hr {
             border-radius: 3px;
             font-size: 20px;
             font-weight: 700;
-            font-family: "Droid Sans", sans-serif;
+            font-family: "Roboto", sans-serif;
             border: 1px solid #ddd395; }
 
 #section-reservation {
@@ -539,7 +540,7 @@ hr {
     position: relative;
     text-align: left;
     color: white;
-    font-family: "Droid Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     background-color: #4a1717;
     padding-top: 15px;
@@ -548,11 +549,11 @@ hr {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
     #section-reservation #reservation-form label {
       font-size: 18px;
-      font-family: "Droid Serif", serif;
+      font-family: "Droid", serif;
       color: #ddd395; }
     #section-reservation #reservation-form .btn {
       background-color: #ddd395;
-      font-family: "Droid Sans", sans-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 22px; }
 
 @keyframes pulse {
@@ -569,13 +570,13 @@ hr {
   background-color: rgba(20, 20, 20, 0.9);
   transition: opacity 0.2s; }
   .form-loading-active h1 {
-    font-family: "Droid Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #ddd395;
     font-size: 26px;
     text-align: center;
     margin: 30px auto; }
   .form-loading-active p {
-    font-family: "Droid Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #ddd395;
     font-size: 16px;
     text-align: center;
@@ -611,6 +612,195 @@ hr {
   .loading-pulse:after {
     left: 32px;
     animation-delay: 333.33333ms; }
+
+#businessandmeeting-header {
+  background: url("../img/business.jpg");
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  color: #fff; }
+  #businessandmeeting-header .tagline {
+    width: 60%; }
+  #businessandmeeting-header p {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px; }
+
+#businessandmeeting-content {
+  background: #f2f2f2;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 100px; }
+  #businessandmeeting-content .paragraph {
+    padding-top: 4em; }
+    #businessandmeeting-content .paragraph p {
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      text-align: justify; }
+  #businessandmeeting-content .pricing img {
+    max-width: 80%;
+    padding-top: 2em; }
+
+#facilities-header {
+  background: url("../img/facilities.jpg");
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  color: #fff; }
+  #facilities-header .tagline {
+    width: 60%; }
+  #facilities-header p {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px; }
+
+#facilities-content {
+  background: #141414;
+  text-align: center;
+  margin-top: 0;
+  padding-bottom: 100px;
+  color: #f2f2f2; }
+  #facilities-content .paragraph {
+    width: 80%; }
+    #facilities-content .paragraph p {
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      text-align: justify; }
+  #facilities-content h2 {
+    padding: 1em 0 1em 0;
+    text-align: left; }
+  #facilities-content hr {
+    border-width: 5px solid #000; }
+  #facilities-content .place-photo {
+    background-size: cover;
+    height: 300px; }
+  #facilities-content .one {
+    background: url("../img/business.jpg"); }
+  #facilities-content .two {
+    background: url("../img/business.jpg"); }
+
+#packages-header {
+  background: url("../img/packages.jpg");
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  color: #fff; }
+  #packages-header .tagline {
+    width: 60%; }
+  #packages-header p {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px; }
+
+#packages-content {
+  background: #f2f2f2;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 100px; }
+  #packages-content .paragraph {
+    width: 80%; }
+    #packages-content .paragraph p {
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      text-align: justify; }
+  #packages-content h2 {
+    padding: 1em 0 1em 0;
+    text-align: left; }
+  #packages-content hr {
+    border-width: 5px solid #000; }
+  #packages-content .pricing img {
+    max-width: 80%;
+    padding-top: 2em; }
+  #packages-content li {
+    text-align: left;
+    font-family: "Roboto", sans-serif; }
+  #packages-content .options {
+    text-align: left; }
+  #packages-content .search {
+    height: 30px; }
+  #packages-content .sort {
+    height: 30px; }
+
+.list {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px 0 0; }
+
+.list > li {
+  display: block;
+  background-color: #eee;
+  padding: 10px;
+  box-shadow: inset 0 1px 0 #fff; }
+
+.avatar {
+  max-width: 150px; }
+
+img {
+  max-width: 100%; }
+
+h3 {
+  font-size: 16px;
+  margin: 0 0 0.3rem;
+  font-weight: normal;
+  font-weight: bold; }
+
+p {
+  margin: 0; }
+
+input {
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  padding: 7px 14px;
+  margin-bottom: 10px; }
+
+input:focus {
+  outline: none;
+  border-color: #aaa; }
+
+.sort {
+  padding-left: 10px;
+  padding-right: 17px;
+  border-radius: 6px;
+  border: none;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none; }
+
+.sort:hover {
+  text-decoration: none; }
+
+.sort:focus {
+  outline: none; }
+
+.sort:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  content: "";
+  position: relative;
+  top: -10px;
+  right: -5px; }
+
+.sort.asc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  content: "";
+  position: relative;
+  top: 13px;
+  right: -5px; }
+
+.sort.desc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  content: "";
+  position: relative;
+  top: -10px;
+  right: -5px; }
 
 .container-fluid {
   padding: 0; }

@@ -1,0 +1,48 @@
+#businessandmeeting-header
+{
+	background: url('../img/business.jpg');
+	text-align: center;
+	padding-top: 150px;
+	padding-bottom: 100px;
+	color:#fff;
+
+	.tagline
+	{
+		width:60%;
+	}
+
+	p
+	{
+		font-family: $font-sans;
+		font-size: 18px;
+	}
+}
+
+#businessandmeeting-content
+{
+	background: #f2f2f2;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 100px;
+
+	.paragraph
+	{
+		padding-top:4em;
+		
+		p
+		{
+			font-family: $font-sans;
+			font-size: 16px;
+			text-align: justify;
+		}
+	}
+
+	.pricing
+	{
+		img
+		{
+			max-width: 80%;
+			padding-top:2em;
+		}
+	}
+}

@@ -1,7 +1,9 @@
 // Import the fonts
 @import 'https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700';
-$font-serif : 'Droid Serif', serif;
-$font-sans  : 'Droid Sans', sans-serif;
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet';
+$font-serif    : 'Droid', serif;
+$font-sans     : 'Roboto', sans-serif;
+$font-tagline  : 'Roboto', sans-serif;
 
 // Theme Colours
 $color-background   : #141414;
@@ -72,6 +74,9 @@ $color-gold         : #ddd395;
 @import 'rooms';
 @import 'reservation';
 @import 'loading';
+@import 'businessandmeeting';
+@import 'facilities';
+@import 'packages';
 
 // Global overrides
 .container-fluid

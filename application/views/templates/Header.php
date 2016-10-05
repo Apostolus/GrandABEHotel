@@ -5,10 +5,32 @@
 		<title>GrandABE Hotel</title>
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/style.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
 
-		<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jquery-3.1.0.min.js"></script>
+		<script   src="http://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
 		<script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
+		<script src="<?php echo base_url(); ?>assets/js/jquery.stellar.min.js"></script>
+		<script src="<?php echo base_url(); ?>assets/js/list.min.js"></script>
 	</head>
+
+	<style>
+		.navbar-nav h4
+		{
+			font-family: 'Roboto', sans-serif !important;
+			font-weight: 400 !important;
+		}
+
+		.dropdown-menu li a
+		{
+			font-family: 'Roboto', sans-serif !important;
+			font-weight: 300 !important;
+		}
+
+		body
+		{
+			font-family: 'Roboto', sans-serif !important;
+		}
+	</style>
 
 	<body> 
 
@@ -40,14 +62,13 @@
 					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><h4><img src="<?php echo base_url(); ?>assets/img/ui/arrow.png" class="dropdown-img">Services</h4></a>
 						<ul class="dropdown-menu dropdown-menu-right">
-							<li><a href="#">Business & Meeting</a></li>
-							<li><a href="#">Facilities</a></li>
-							<li><a href="#">Packages</a></li>
+							<li><a href="<?php echo site_url() ?>businessandmeeting">Business & Meeting</a></li>
+							<li><a href="<?php echo site_url() ?>facilities">Facilities</a></li>
+							<li><a href="<?php echo site_url() ?>packages">Packages</a></li>
 						</ul>
 					</li>
 					<li><a href="#"><h4>Contact</h4></a></li> 
 				</ul>
-				
 			</div>
 		</div>
 	</nav>

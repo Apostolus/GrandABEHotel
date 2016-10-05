@@ -57,3 +57,6 @@ $route['about'] = 'main/about';
 $route['philosophy'] = 'main/philosophy';
 $route['rooms'] 	= 'main/rooms';
 $route['reservation'] = 'main/reservation';
+$route['businessandmeeting'] = 'main/businessandmeeting';
+$route['facilities'] = 'main/facilities';
+$route['packages'] = 'main/packages';

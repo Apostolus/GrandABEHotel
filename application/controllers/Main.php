@@ -42,6 +42,30 @@ class Main extends CI_Controller
 		$this->load->view('templates/footer');
 	}
 
+	// Business and meeting
+	public function businessandmeeting()
+	{
+		$this->load->view('templates/header');
+		$this->load->view('pages/businessandmeeting');
+		$this->load->view('templates/footer');
+	}
+
+	// Business and meeting
+	public function facilities()
+	{
+		$this->load->view('templates/header');
+		$this->load->view('pages/facilities');
+		$this->load->view('templates/footer');
+	}
+
+	// Business and meeting
+	public function packages()
+	{
+		$this->load->view('templates/header');
+		$this->load->view('pages/packages');
+		$this->load->view('templates/footer');
+	}
+
 	// Reservation Page
 	public function reservation()
 	{
