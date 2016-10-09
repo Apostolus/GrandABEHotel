@@ -58,7 +58,7 @@
 
 .navbar-nav h4 {
   color: #ddd395;
-  font-family: "Droid", serif !important;
+  font-family: "Droid Serif", serif !important;
   font-weight: 700 !important; }
 
 .navbar-nav li a:focus {
@@ -95,7 +95,7 @@ ul.nav a:hover {
   .dropdown-menu li a {
     color: white;
     padding: 10px 15px;
-    font-family: "Droid", serif !important;
+    font-family: "Droid Serif", serif !important;
     font-weight: 700 !important; }
   .dropdown-menu li a:hover {
     color: white;
@@ -110,7 +110,7 @@ section {
   background-color: #141414;
   text-align: center; }
   section h1 {
-    font-family: "Droid", serif;
+    font-family: "Droid Serif", serif;
     color: #ddd395;
     font-size: 32px;
     font-weight: 700;
@@ -131,7 +131,7 @@ section {
       background-position: center;
       border-radius: 3px 0 0 3px; }
     section .press-release-container h2 {
-      font-family: "Droid", serif;
+      font-family: "Droid Serif", serif;
       font-weight: 700;
       color: #ddd395;
       font-size: 26px; }
@@ -191,7 +191,7 @@ section {
   width: 100%;
   padding-top: 0; }
   #section-cta h2 {
-    font-family: "Droid", serif;
+    font-family: "Droid Serif", serif;
     color: white;
     font-size: 26px;
     text-shadow: 0px 0px 3px black; }
@@ -235,7 +235,7 @@ section {
     font-size: 36px;
     font-weight: 700;
     color: #ddd395;
-    font-family: "Droid", serif;
+    font-family: "Droid Serif", serif;
     text-shadow: 0px 0px 5px black, 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 8px rgba(0, 0, 0, 0.1), 0px 18px 15px rgba(0, 0, 0, 0.1); }
   .carousel-caption p {
     font-size: 22px;
@@ -349,7 +349,7 @@ hr {
     max-width: 250px;
     height: auto; }
   #section-about h2 {
-    font-family: "Droid", serif;
+    font-family: "Droid Serif", serif;
     font-size: 32px;
     font-weight: 700;
     color: #ddd395;
@@ -392,7 +392,7 @@ hr {
     max-width: 250px;
     height: auto; }
   #section-philosophy h2 {
-    font-family: "Droid", serif;
+    font-family: "Droid Serif", serif;
     font-size: 36px;
     font-weight: 300;
     color: #A0A0A0;
@@ -400,7 +400,7 @@ hr {
     font-weight: 300;
     margin: 60px auto 60px auto; }
   #section-philosophy h3 {
-    font-family: "Droid", serif;
+    font-family: "Droid Serif", serif;
     font-size: 32px;
     font-weight: 700;
     color: #ddd395;
@@ -443,7 +443,7 @@ hr {
   padding-top: 100px;
   padding-bottom: 100px; }
   #section-rooms h2 {
-    font-family: "Droid", serif;
+    font-family: "Droid Serif", serif;
     font-size: 36px;
     font-weight: 300;
     color: #A0A0A0;
@@ -451,7 +451,7 @@ hr {
     font-weight: 300;
     margin: 60px auto 60px auto; }
   #section-rooms h3 {
-    font-family: "Droid", serif;
+    font-family: "Droid Serif", serif;
     font-size: 32px;
     font-weight: 700;
     color: #ddd395;
@@ -549,12 +549,17 @@ hr {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
     #section-reservation #reservation-form label {
       font-size: 18px;
-      font-family: "Droid", serif;
+      font-family: "Droid Serif", serif;
       color: #ddd395; }
     #section-reservation #reservation-form .btn {
       background-color: #ddd395;
       font-family: "Roboto", sans-serif;
       font-size: 22px; }
+    #section-reservation #reservation-form .form-error {
+      color: lightgrey;
+      height: 20px; }
+  #section-reservation #form-notification {
+    margin-top: 20px; }
 
 @keyframes pulse {
   50% {

@@ -14,7 +14,13 @@ class Main extends CI_Controller
 	public function index()
 	{
 		$this->load->view('templates/header');
-		$this->load->view('pages/home');
+
+		// Query posts from database to be shown
+		$this->load->model('pressrelease_model');
+		$this->load->model('carousel_model');
+		$data['press_release'] = $this->pressrelease_model->get_posts(PRESS_RELEASE_HOME_MAX);
+		$data['carousel'] = $this->carousel_model->get();
+		$this->load->view('pages/home', $data);
 		$this->load->view('templates/footer');
 	}
 
@@ -66,6 +72,18 @@ class Main extends CI_Controller
 		$this->load->view('templates/footer');
 	}
 
+	// Press release page
+	public function press_release()
+	{
+
+	}
+
+	// Press release detail
+	public function press_release_detail()
+	{
+		
+	}
+
 	// Reservation Page
 	public function reservation()
 	{
@@ -74,7 +92,7 @@ class Main extends CI_Controller
 			'reservation_title',
 			'reservation_first_name',
 			'reservation_last_name',
-			'reservation_mobile_number',
+			'reservation_mobile_phone',
 			'reservation_email',
 			'reservation_email_confirmation',
 			'reservation_bb_pin',
@@ -96,26 +114,41 @@ class Main extends CI_Controller
 				'field' => 'reservation_first_name',
 				'label' => 'First Name',
 				'rules' => 'required',
+				'errors' => array(
+					'required' => 'Mohon diisi.',
+				)
 			),
 			array(
 				'field' => 'reservation_last_name',
 				'label' => 'Last Name',
 				'rules' => 'required',
+				'errors' => array(
+					'required' => 'Mohon diisi.',
+				)
 			),
 			array(
-				'field' => 'reservation_mobile_number',
+				'field' => 'reservation_mobile_phone',
 				'label' => 'Mobile Number',
 				'rules' => 'required',
+				'errors' => array(
+					'required' => 'Mohon diisi.',
+				)
 			),
 			array(
 				'field' => 'reservation_email',
 				'label' => 'Email',
 				'rules' => 'required',
+				'errors' => array(
+					'required' => 'Mohon diisi.',
+				)
 			),
 			array(
 				'field' => 'reservation_email_confirmation',
 				'label' => 'Email confirmation',
 				'rules' => 'required|matches[reservation_email]',
+				'errors' => array(
+					'required' => 'Mohon diisi.',
+				)
 			),
 			array(
 				'field' => 'reservation_bb_pin',
@@ -126,7 +159,7 @@ class Main extends CI_Controller
 				'label' => 'Check-In',
 				'rules' => 'required',
 				'errors' => array(
-					'required' => 'Waktu check-in harus diisi!',
+					'required' => 'Mohon diisi.',
 				)
 			),
 			array(
@@ -134,23 +167,32 @@ class Main extends CI_Controller
 				'label' => 'Check-Out',
 				'rules' => 'required',
 				'errors' => array(
-					'required' => 'Waktu check-out harus diisi!',
+					'required' => 'Mohon diisi.',
 				)
 			),
 			array(
 				'field' => 'reservation_number_of_guests',
 				'label' => 'Number of guests',
-				'rules' => 'required'
+				'rules' => 'required',
+				'errors' => array(
+					'required' => 'Mohon diisi.',
+				)
 			),
 			array(
 				'field' => 'reservation_room_type',
 				'label' => 'Room Type',
-				'rules' => 'required'
+				'rules' => 'required',
+				'errors' => array(
+					'required' => 'Mohon diisi.',
+				)
 			),
 			array(
 				'field' => 'reservation_number_of_rooms',
 				'label' => 'Number of rooms',
-				'rules' => 'required'
+				'rules' => 'required',
+				'errors' => array(
+					'required' => 'Mohon diisi.',
+				)
 			),
 			array(
 				'field' => 'reservation_additional_messages',
@@ -177,7 +219,7 @@ class Main extends CI_Controller
 			{
 				$response['success'] = true;
 				$response['success_title'] = 'You have successfully submitted your form.';
-				$response['success_message'] = 'Thank you for submitting your booking with us, this is not a confirmation for your booking, our reservation staff will contact you through your email within 24 hours. Please also check your SPAM or JUNK mail.';
+				$response['success_message'] = 'Thank you for submitting your booking with us, this is not a confirmation for your booking, our reservation staff will contact you through your email within 24 hours. Please also check your SPAM or JUNK mail. Thank you.';
 			}
 			else
 			{
@@ -190,11 +232,89 @@ class Main extends CI_Controller
 				{
 					if (!empty(form_error($field_name)))
 					{
-						$response['error_message']['$field_name'] = form_error($field_name);
+						$response['error_message'][$field_name] = form_error($field_name);
 					}
 				}
 			}
+
 			echo json_encode($response);
+
+			if ($response['success'])
+			{
+				// Send the reservation data to the admin's email
+				$to = ADMIN_RESERVATION_EMAIL;
+				$subject = 'Reservation : ' . $_POST['reservation_title'] . " " . $_POST['reservation_first_name'] . " " . $_POST['reservation_last_name'] ;
+
+				$message = '
+				<html>
+					<head>
+						<title>Reservation : ' . $_POST['reservation_title'] . ' ' . $_POST['reservation_first_name'] . ' ' . $_POST['reservation_last_name'] . '</title>
+					</head>
+					<body>
+						<p>Formulir reservasi online : </p>
+						<table class="tg">
+							<tr>
+								<td style="font-weight:bold;font-family:Verdana, Geneva, sans-serif !important;;background-color:#680100;color:#ffffc7;vertical-align:top">Title</td>
+								<td>' . $_POST['reservation_title'] . '</td>
+							</tr>
+							<tr>
+								<td style="font-weight:bold;font-family:Verdana, Geneva, sans-serif !important;;background-color:#680100;color:#ffffc7;vertical-align:top">First Name</td>
+								<td>' . $_POST['reservation_first_name'] . '</td>
+							</tr>
+							<tr>
+								<td style="font-weight:bold;font-family:Verdana, Geneva, sans-serif !important;;background-color:#680100;color:#ffffc7;vertical-align:top">Last Name</td>
+								<td>' . $_POST['reservation_last_name'] . '</td>
+							</tr>
+							<tr>
+								<td style="font-weight:bold;font-family:Verdana, Geneva, sans-serif !important;;background-color:#680100;color:#ffffc7;vertical-align:top">Mobile Number</td>
+								<td>' . $_POST['reservation_mobile_phone'] . '</td>
+							</tr>
+							<tr>
+								<td style="font-weight:bold;font-family:Verdana, Geneva, sans-serif !important;;background-color:#680100;color:#ffffc7;vertical-align:top">Email</td>
+								<td>' . $_POST['reservation_email'] . '</td>
+							</tr>
+							<tr>
+								<td style="font-weight:bold;font-family:Verdana, Geneva, sans-serif !important;;background-color:#680100;color:#ffffc7;vertical-align:top">BBPin</td>
+								<td>' . $_POST['reservation_bb_pin'] . '</td>
+							</tr>
+							<tr>
+								<td style="font-weight:bold;font-family:Verdana, Geneva, sans-serif !important;;background-color:#680100;color:#ffffc7;vertical-align:top">Check-In</td>
+								<td>' . $_POST['reservation_checkin'] . '</td>
+							</tr>
+							<tr>
+								<td style="font-weight:bold;font-family:Verdana, Geneva, sans-serif !important;;background-color:#680100;color:#ffffc7;vertical-align:top">Check-Out</td>
+								<td>' . $_POST['reservation_checkout'] . '</td>
+							</tr>
+							<tr>
+								<td style="font-weight:bold;font-family:Verdana, Geneva, sans-serif !important;;background-color:#680100;color:#ffffc7;vertical-align:top">Number of guests</td>
+								<td>' . $_POST['reservation_number_of_guests'] . '</td>
+							</tr>
+							<tr>
+								<td style="font-weight:bold;font-family:Verdana, Geneva, sans-serif !important;;background-color:#680100;color:#ffffc7;vertical-align:top">Room Type</td>
+								<td>' . $_POST['reservation_room_type'] . '</td>
+							</tr>
+							<tr>
+								<td style="font-weight:bold;font-family:Verdana, Geneva, sans-serif !important;;background-color:#680100;color:#ffffc7;vertical-align:top">Number of rooms</td>
+								<td>' . $_POST['reservation_number_of_rooms'] . '</td>
+							</tr>
+							<tr>
+								<td style="font-weight:bold;font-family:Verdana, Geneva, sans-serif !important;;background-color:#680100;color:#ffffc7;vertical-align:top">Additional Message</td>
+								<td>' . $_POST['reservation_additional_messages'] . '</td>
+							</tr>
+						</table>
+					</body>
+				</html>
+				';
+
+				// Always set content-type when sending HTML email
+				$headers = "MIME-Version: 1.0" . "\r\n";
+				$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+				// More headers
+				$headers .= 'From: ' . ADMIN_RESERVATION_EMAIL . "\r\n";
+				
+				mail($to, $subject, $message, $headers);
+			}
 		}
 		else
 		{

@@ -28,6 +28,17 @@
 			font-family: $font-sans;
 			font-size: 22px;
 		}
+
+		.form-error
+		{
+			color: lightgrey;
+			height: 20px;
+		}
+	}
+
+	#form-notification
+	{
+		margin-top: 20px;
 	}
 }
 

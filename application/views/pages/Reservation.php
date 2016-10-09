@@ -10,7 +10,7 @@
 
 					<!-- User title -->
 					<div class="form-group col-xs-12" data-for="reservation_title">
-						<label for="reservation_title">Your Title</label><br>
+						<label for="reservation_title">Your Title*</label><br>
 						<input type="radio" name="reservation_title" value="mr" checked> Mr.&nbsp;&nbsp;
 						<input type="radio" name="reservation_title" value="mrs"> Mrs.&nbsp;&nbsp;
 						<input type="radio" name="reservation_title" value="miss"> Miss.&nbsp;&nbsp;
@@ -19,21 +19,21 @@
 					<!-- User first name -->
 					<div class="form-group col-xs-12 col-sm-6" data-for="reservation_first_name">
 						<p class="form-error"></p>
-						<label for="reservation_first_name">First Name</label>
+						<label for="reservation_first_name">First Name*</label>
 						<input type="text" name="reservation_first_name" class="form-control">
 					</div>
 
 					<!-- User last name -->
 					<div class="form-group col-xs-12 col-sm-6" data-for="reservation_last_name">
 						<p class="form-error"></p>
-						<label for="reservation_last_name">Last Name</label>
+						<label for="reservation_last_name">Last Name*</label>
 						<input type="text" name="reservation_last_name" class="form-control">
 					</div>
 
 					<!-- User mobile number -->
 					<div class="form-group col-xs-12 col-sm-6" data-for="reservation_mobile_phone">
 						<p class="form-error"></p>
-						<label for="reservation_mobile_phone">Mobile Number</label>
+						<label for="reservation_mobile_phone">Mobile Number*</label>
 						<input type="number" name="reservation_mobile_phone" class="form-control">
 					</div>
 
@@ -47,36 +47,36 @@
 					<!-- User Email -->
 					<div class="form-group col-xs-12 col-sm-6" data-for="reservation_email">
 						<p class="form-error"></p>
-						<label for="reservation_email">E-Mail</label>
+						<label for="reservation_email">E-Mail*</label>
 						<input type="text" name="reservation_email" class="form-control">
 					</div>
 
 					<!-- User Email Confirmation -->
 					<div class="form-group col-xs-12 col-sm-6" data-for="reservation_email_confirmation">
 						<p class="form-error"></p>
-						<label for="reservation_email_confirmation">E-Mail Confirmation</label>
+						<label for="reservation_email_confirmation">E-Mail Confirmation*</label>
 						<input type="text" name="reservation_email_confirmation" class="form-control">
 					</div>
 
 					<!-- User Checkin Date -->
 					<div class="form-group col-xs-6" data-for="reservation_checkin">
 						<p class="form-error"></p>
-						<label for="reservation_checkin">Check-In</label>
+						<label for="reservation_checkin">Check-In*</label>
 						<input type="date" name="reservation_checkin" class="form-control">
 					</div>
 
 					<!-- User Checkin Date -->
 					<div class="form-group col-xs-6" data-for="reservation_checkout">
 						<p class="form-error"></p>
-						<label for="reservation_checkout">Check-out</label>
+						<label for="reservation_checkout">Check-out*</label>
 						<input type="date" name="reservation_checkout" class="form-control">
 					</div>
 
 					<!-- Room Type -->
 					<div class="form-group col-xs-12 col-sm-6" data-for="reservation_room_type">
 						<p class="form-error"></p>
-						<label for="reservation_children">Room Type</label>
-						<select name="adults" class="form-control">
+						<label for="reservation_room_type">Room Type*</label>
+						<select name="reservation_room_type" class="form-control">
 							<option value="superior">Superior Room</option>
 							<option value="deluxe">Deluxe Room</option>
 							<option value="family">Family Suite</option>
@@ -88,14 +88,14 @@
 					<!-- Rooms -->
 					<div class="form-group col-xs-6 col-sm-3" data-for="reservation_number_of_rooms">
 						<p class="form-error"></p>
-						<label for="reservation_number_of_rooms">Number of Rooms</label>
+						<label for="reservation_number_of_rooms">Number of Rooms*</label>
 						<input type="number" name="reservation_number_of_rooms" class="form-control">
 					</div>
 
 					<!-- Persons -->
 					<div class="form-group col-xs-6 col-sm-3" data-for="reservation_number_of_guests">
 						<p class="form-error"></p>
-						<label for="reservation_number_of_guests">Number of Guests</label>
+						<label for="reservation_number_of_guests">Number of Guests*</label>
 						<input type="number" name="reservation_number_of_guests" class="form-control">
 					</div>
 
@@ -112,7 +112,7 @@
 					</div>
 
 					<!-- Notification Area -->
-					<div id="form-notification">
+					<div id="form-notification" class="col-xs-12">
 
 					</div>
 

@@ -83,3 +83,11 @@ defined('EXIT_USER_INPUT')     OR define('EXIT_USER_INPUT', 7); // invalid user 
 defined('EXIT_DATABASE')       OR define('EXIT_DATABASE', 8); // database error
 defined('EXIT__AUTO_MIN')      OR define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
+
+// Application definitions
+define ('ADMIN_RESERVATION_EMAIL', 'furibaito@gmail.com');			// Where the user reservation email is sent to
+
+// Application configurations
+define ('ADMIN_USERNAME', 'admin');
+define ('ADMIN_PASSWORD', 'weborn2016grandabehotel');
+define ('PRESS_RELEASE_HOME_MAX', 4);
