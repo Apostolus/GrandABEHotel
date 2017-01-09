@@ -1,12 +1,12 @@
 // Import the fonts
 @import 'https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700';
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet';
-$font-serif    : 'Droid Serif', serif;
+$font-serif    : 'Roboto', sans-serif;
 $font-sans     : 'Roboto', sans-serif;
 $font-tagline  : 'Roboto', sans-serif;
 
 // Theme Colours
-$color-background   : #141414;
+$color-background   : #ffffff;
 $color-grey         : #1e1e1e;
 $color-white		: #A0A0A0;
 $color-red          : #4a1717;
@@ -77,6 +77,7 @@ $color-gold         : #ddd395;
 @import 'businessandmeeting';
 @import 'facilities';
 @import 'packages';
+@import 'admin';
 
 // Global overrides
 .container-fluid

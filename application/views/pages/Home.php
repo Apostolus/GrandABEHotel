@@ -18,16 +18,15 @@
 				foreach($carousel as $slide)
 				{
 					echo '<div class="item active">
-						<img src="' . $post['image'] . '" width="100%">
+						<img src="' . $slide->image . '" width="100%">
 						<div class="gradient-mask-full-light"></div>
 						<div class="carousel-caption">
-							<h3>' . $post['title'] . '</h3>
-							<img src="<?php echo base_url(); ?>assets/img/ui/line_shadow.png" width="50%" style="margin:2vw" class="hidden-xs">
-						<p class="hidden-xs">' . $post['content'] . '</p>
+							<h3>' . $slide->title . '</h3>
+							<img src=" ' . base_url() .'assets/img/ui/line_shadow.png" width="50%" style="margin:2vw" class="hidden-xs">
+						<p class="hidden-xs">' . $slide->content . '</p>
 						</div>
 					</div>';
 				}
-				echo '<a href="#">View More</a>';
 			}
 			?>
 			
@@ -47,16 +46,16 @@
 	<!-- BOOKING -->
 	<div class="bookingDiv">
 		<form class="row container" style="margin: auto">
-			<div class="col-xs-12 col-md-2">
+			<div class="col-xs-12 col-md-4">
 				<label for="checkin">Check-In</label>
 				<input type="date" class="form-control" id="checkin">
 			</div>
-			<div class="col-xs-12 col-md-2">
+			<div class="col-xs-12 col-md-4">
 				<label for="checkin">Check-Out</label>
 				<input type="date" class="form-control" id="checkin">
 			</div>
-			<div class="col-xs-12 col-md-3">
-				<input type="submit" value="BOOK" class="button">
+			<div class="col-xs-12 col-md-4">
+				<input type="submit" value="BOOK" class="button pull-right">
 			</div>
 		</form>
 	</div>
@@ -73,11 +72,11 @@
 				foreach($press_release as $post)
 				{
 					echo '<div class="press-release-container row">
-						<div class="press-release-image col-md-4 col-sm-12" style="background-image: url(' . $post['image'] . ')"></div>
+						<div class="press-release-image col-md-4 col-sm-12" style="background-image: url(' . $post->image . ')"></div>
 						<div class="col-md-8 col-sm-12">
-							<a href="#"><h2>' . $post['title'] . '</h2></a>
-							<h3>' . $post['date_posted'] . '</h3>
-							<p>' . $post['home_content'] . '</p>
+							<a href="#"><h2>' . $post->title . '</h2></a>
+							<h3>' . $post->date_posted . '</h3>
+							<p>' . $post->home_content . '</p>
 							<a href="#" class="read-more-button">Read More</a>
 						</div>
 					</div>';
